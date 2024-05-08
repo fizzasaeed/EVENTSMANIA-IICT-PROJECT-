@@ -1,0 +1,376 @@
+<html>
+<head>
+    <style>
+             *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(palace-2.jpg);
+    height: 100px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: 'Times New Roman';
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 0px 0;
+}
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+    width: 100px;
+    float: left;
+    height: auto;}
+
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+}
+footer{
+    background: rgb(116, 134, 155);
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.4rem;
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+.footer-content p{
+    max-width: 350px;
+    margin: 40px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.footer-bottom{
+    background: #000;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: #ffbd59;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+.P{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+}
+a{
+    padding: auto;
+}
+
+nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+      }
+
+      nav a {
+        display: block;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #ddc2c2;
+      }
+      /* Hide Dropdowns by Default */
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+      }
+
+      /* Display Dropdowns on Hover */
+      nav ul li:hover > ul {
+        display: grid;
+      }
+
+      /* Fisrt Tier Dropdown */
+      nav ul ul li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        background-color: #000;
+      }
+    </style>
+
+  <title>LOCATION</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="wrapper">
+          <div class="logo">
+              <img src="images/logo_png-removebg.png" width="150" height="150">
+          </div>
+          <nav>
+              <ul class="nav-area">
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="ABOUT.html">About</a></li>
+                <li><a href="Gallery(2).html">Gallery</a></li>
+                <li>
+                  <a href="eventmain.html">Events</a>
+                  <ul>
+                    <li><a href="EVENTS.MAYYON2.HTML">MEHENDI-MAYYOUN</a></li>
+                    <li><a href="baraat2.html">BARAAT-WEDDING</a></li>
+                    <li><a href="valima.html">VALIMA-RECEPTION</a></li>
+                    <li><a href="BIRTHDAY THEMES.html">BIRTHDAYS</a></li>
+                    <li><a href="CONFERENCE THEMES.html">CONFERENCES</a></li>
+                  </ul>
+                </li>
+    
+                <li><a href="LOCATION.html">Location</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </nav>
+  </div>    
+
+
+</header>
+  <p class="heading"> LOCATIONS WE OFFER </p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <a href="https://www.google.com/maps/search/banquets+near+Clifton,+Karachi/@24.8205002,67.0002395,14z/data=!3m1!4b1"><img src="images/CLIFTON.png" alt="CLIFTON" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">CLIFTON</p></a>
+        </div>
+      
+      </div> 
+      
+    </div>
+  
+
+    <div class="img-box">
+      <a href="https://www.google.com/maps/place/Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9211676,67.0563858,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb338b808bfd6b1:0x997b1a02c2570822!8m2!3d24.9180271!4d67.0970916"><img src="images/GULSHAN E IQBAL.png" alt="GULSHAN-E-IQBAL">
+
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low">GULSHAN E IQBAL</p></a>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+        <a href="https://www.google.com/maps/place/Gulistan-e-Johar,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9200034,67.1191429,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb338fa00456acf:0x7a277bdfeb6b99aa!8m2!3d24.9204194!4d67.1343848" ><img  src="images/JOHAR.png" alt="JOHAR" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p class="opacity-low"> JOHAR</p></a>
+        </div>
+      </div> 
+    </div>
+
+
+
+    <div class="gallery-image">
+        <div class="img-box">
+          <a href="https://www.google.com/maps/place/Pakistan+Employees+Co-Operative+Housing+Society+PECHS,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8681747,67.0442549,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33ec754efc47f:0x12e3c65adb1fe013!8m2!3d24.8688044!4d67.0613528"><img src="images/pechs.png" alt="pechs" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p class="opacity-low">pechs</p></a>
+            </div>
+          
+          </div> 
+          
+        </div>
+      
+    
+        <div class="img-box">
+          <a href="https://www.google.com/maps/place/Sakhi+Hassan+Block+N+North+Nazimabad+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9539927,67.0488023,15z/data=!3m1!4b1!4m5!3m4!1s0x3eb3408545e8af11:0xd557fabb6ac61c9!8m2!3d24.953974!4d67.0575571"><img src="images/SAKHI HASAN.png" alt="SAKHI HASAN" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p class="opacity-low">SAKHI HASAN</p></a>
+            </div>
+          </div> 
+        </div>
+      
+        <div class="img-box">
+            <a href="https://www.google.com/maps/place/Shahrah-e-Faisal+Rd,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8817361,67.1094704,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33eafe2ecc311:0x8213daf29adc6923!8m2!3d24.8817312!4d67.1116591"><img  src="images/SHAHRAH.png" alt="SHAHRAH" />
+          <div class="transparent-box">
+            <div class="caption">
+              <p class="opacity-low"> SHAHRAH E FAISAL</p></a>
+            </div>
+          </div> 
+        </div>
+  
+    
+
+
+  <!-- footer ka content -->
+  <footer>
+    <div class="footer-content">
+        <h3>EVENTS MANIA</h3>
+        <p>EVENTS MANIA coming to your city, Explore the best events location of your city with best prices</p>
+
+    </div>
+    <div class="footer-bottom">
+        <p><span>© 2022 EVENTS MANIA - Designed & Developed By <a href="https://www.linkedin.com/in/syed-sohaib-/" style="color: white" >EVENTS MANIA</a></span></p>
+
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  'Times New Roman', Times, serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/about\ page\ cover.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: 'Times New Roman';
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+    width: 100px;
+    float: left;
+    height: auto;}
+
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+}
+footer{
+    background: rgb(116, 134, 155);
+    height: auto;
+    width: 100vw;
+    font-family: 'Times New Roman', Times;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.4rem;
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+.footer-content p{
+    max-width: 350px;
+    margin: 40px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.footer-bottom{
+    background: #000;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    
+}
+
+
+
+
+.container{
+   width:100%;
+}
+.container h1{
+   font-size:50px
+}
+.about{
+   padding:5% 0;
+   width:100%;
+   height:auto;
+   background-color:#fff;
+}
+.about .left{
+   padding:2% 0;
+   float:left;
+   width:50%;
+   display:inline-block;
+}
+.about .right{
+   width:50%;
+   display:inline-block;
+}
+.about .right img{
+   width:100%
+}
+.about .left h1{
+   text-align:center;
+   color:#060606;
+   margin:0 0 10px 0;
+   
+}
+.about .left hr{
+   width:20%;
+   border-top:2px solid #000;
+   border-bottom:none;
+}
+.about .left p{
+   font-family: 'Times New Roman', Times, serif;
+   margin:40px auto;
+   width:80%
+   
+   
+}
+
+.mission{
+   padding:5% 0;
+   width:100%;
+   height:auto;
+   background-color:#fff;
+}
+.mission .right{
+   padding:2% 0;
+   width:50%;
+
+   display:inline-block;
+}
+.mission .left{
+   float:left;
+   width:50%;
+
+   display:inline-block;
+}
+.mission .left img{
+   width:100%;
+}
+.mission .right h1{
+   text-align:center;
+   color:#0c0d0d;
+   margin:0 0 20px 0;
+}
+.mission .right hr{
+   width:35%;
+   border-top:2px solid #000;
+   border-bottom:none;
+}
+.mission .right p{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: small;
+   margin:40px auto;
+   width:80%
+   
+}
+
+
+.team{
+   width:90%;
+   margin:auto;
+   padding:5% 5%;
+   over-flow: hidden;
+}
+.team h1{
+   text-align:center;
+   color:#0a0a0a;
+   
+}
+.team h1 hr{
+   width:15%;
+   border-top:2px solid #000;
+   background-color:transperant;
+   border-bottom:none;
+   margin-bottom:50px;
+}
+.team .card{
+   padding-bottom: 10px;
+   padding-top: 10px;
+   position:relative;
+   min-width:10%;
+   height:500px !important;
+   height:auto;
+   background-color:rgb(255, 255, 255);
+   display:inline-block;
+   margin:10px 5.5%;
+   box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+   text-align:center;
+   align-items: center;
+}
+.card .circle-container{
+   position:relative;
+   background-color:#579f79;
+   width:200px;
+   height:200px;
+   border:none;
+   border-radius:50%;
+   margin:auto;
+   color:#fff;
+   text-align:center;
+   align-items: center;
+}
+.circle-container h1{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   margin:0;
+   font-size:60px;
+   text-align:center;
+   align-items: center;
+}
+
+.team .card h2{
+   text-align:center;
+   margin:30px 0 0 0;
+}
+.team .card h4{
+   text-align:center;
+   margin:10px 0 0 0;
+}
+.team .card p{
+   width:250px;
+   margin:30px auto;
+   text-align:center;
+
+}
+.clear{
+    clear: both;			
+}
+
+
+
+
+
+
+
+/* media */
+@media(max-width:1200px){
+   .mission .right p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+   .about .left p{
+      font-size:.8rem;
+      margin:20px auto;
+   }
+}
+
+
+
+
+
+
+@media(max-width:992px){
+   .about .left{
+   width:100%; 
+}
+   .about .right{
+   width:100%; 
+}
+      .mission .left{
+   width:100%; 
+}
+   .mission .right{
+   width:100%; 
+}
+   .team .card{ 
+   width:40%;
+}   
+}
+
+@media(max-width:768px){
+      .team .card{ 
+   width:100%;
+} 
+   nav{
+      height:80px;
+   }
+}
+.P{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+}
+a{
+    padding: auto;
+}
+
+nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+      }
+
+      nav a {
+        display: block;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+   
+      }
+
+      nav a:hover {
+        background-color: #ddc2c2;
+      }
+      /* Hide Dropdowns by Default */
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+      }
+
+      /* Display Dropdowns on Hover */
+      nav ul li:hover > ul {
+        display: grid;
+      }
+
+      /* Fisrt Tier Dropdown */
+      nav ul ul li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        background-color: #000;
+      }
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+</head>
+<body>
+   <header>
+       <div class="wrapper">
+           <div class="logo">
+               <img src="images/logo_png-removebg.png" width="150" height="150">
+           </div>
+           <nav>
+               <ul class="nav-area">
+                 <li><a href="HOME.html">Home</a></li>
+                 <li><a href="ABOUT.html">About</a></li>
+                 <li><a href="Gallery(2).html">Gallery</a></li>
+                 <li>
+                   <a href="eventmain.html">Events</a>
+                   <ul>
+                     <li><a href="EVENTS.MAYYON2.HTML">MEHENDI-MAYYOUN</a></li>
+                     <li><a href="baraat2.html">BARAAT-WEDDING</a></li>
+                     <li><a href="valima.html">VALIMA-RECEPTION</a></li>
+                     <li><a href="BIRTHDAY THEMES.html">BIRTHDAYS</a></li>
+                     <li><a href="CONFERENCE THEMES.html">CONFERENCES</a></li>
+                   </ul>
+                 </li>
+     
+                 <li><a href="LOCATION.html">Location</a></li>
+                 <li><a href="contactus.html">Contact Us</a></li>
+               </ul>
+             </nav>
+   </div>    
+
+
+   <div class="welcome-text">
+             <h1>ABOUT</h1>
+    
+        </div>
+    </header>
+
+
+    
+ <nav></nav>  
+ <div class="header">
+ 
+ </div>
+ 
+ <div class="container">
+    
+    <div class="about">
+       <div class="left">
+          <h1>About us</h1>
+          <hr>
+          <p><b>WE PROVIDE ONE OF THE GOOD SOURCE TO GET ALL THE RELATED INFORMATION ABOUT THE MARRIAGE HALLS AND THE LOCATIONS OF THE EVENTS</p>
+ 
+                   <p>EVENTSMANIA.COM IS PAKISTAN'S INNOVATIVE MARRIAGE HALL BOOKING PORTAL WHERE YOU CAN BROWSE HUNDREDS OF VENUES, EXPLORE THEIR FACILITIES, CHECK THIER SERVICES, PRICES AND AVAILABILITY AND BOOK THEM IMMEDIATELY. WE ALSO PROVIDE COMPLETE PRICING FOR THEIR MENUS, HALL CHARGES, STAGE DECORATION, DJ SERVICES, AND OTHER MISCELLANOUS SERVICES.</p></b>
+ 
+       </div>
+       <div class="right">
+          <img src="images/about page pic 1.jpeg">
+       </div>
+       <div class="clear"></div>
+    </div>
+    
+    
+    
+    <div class="mission">
+      
+       <div class="left">
+          <img src="images/about page pic 2.jpg">
+       </div>
+         <div class="right">
+          <h1>Mission Statement</h1>
+          <hr>
+          <p><b>THE INCREASE IN THE NUMBER OF BANQUETS IS DUE TO THE CONVENIENCE IT PROVIDES TO THE HOSTS, PROTECTION AGAINST WEATHER CONDITIONS, AND EYE-CATCHING AMBIANCE CONCERNING THE EVENT THEME. BANQUET HALLS AND BALLROOMS ARE PROPOSEDTO BE ESTABLISHED FOR SOME REASONS.</p>
+ 
+                   <p>1. IT HAS CONVENIENT PARKING SPACE<br>
+                  2. IT HAS EASY PUBLIC ACCESS<br>
+                  3. QUALITY OF FIXTURES AND ACCESSORIES<br>
+                  4. AESTHETICALLY DESIGNED BANQUETS HALLS WITH THE FLEXIBILITY TO CUSTOMIZE THE EVENT THEMES<BR>
+                  5. AVAILABILITY OF CATERING SERVICE<br>
+                  6. A GOOD BRIEFING WILL AVOID MANY SERVICE PROBLEMS DURING THE FUNCTION<br>
+                  7. THE EXPECTED NUMBER OF GUESTS ACCORDING TO CAPACITY</p></b>
+ 
+       </div>
+       <div class="clear"></div>
+       
+    </div>
+    
+    
+   
+        <div class="team">
+       <h1> Our Team<hr></h1>
+           
+           
+           
+       <div  class="card">
+          <div class="circle-container">
+             <h1 style="color:#fff;">S</h1>
+          </div>
+          <h2>SYED SOHAIB ALI</h2>
+          <p><B>TEAM MATE</B> <br>
+          BS-CS<br>
+          STUDENT AT PAF-KIET<br> <br>
+          <b>CONTRIBUTION</b><br>
+          NAV BAR<br>
+          FOOTER<br>
+          GALLERY<br>
+          BIRTHDAY THEME<br>
+
+
+         
+              
+            
+           
+          </p>
+       </div>
+           
+           
+           
+       <div class="card">
+          <div class="circle-container">
+             <h1 style="color:#fff;">F</h1>
+          </div>
+          <h2>FIZZA SAEED</h2>
+         <p><B>TEAM MATE</B> <br>
+          BS-CS<br>
+          STUDENT AT PAF-KIET<br> <br>
+          <b>CONTRIBUTION</b><br>
+          CONTACT US<br>
+          EVENTS<br>
+          MEHENDI-MAYYOUN<br>
+          BARAAT-WEDDING<br>
+            
+           
+          </p>
+       </div>
+           
+           
+           
+       <div class="card">
+         <div class="circle-container">
+            <h1 style="color:#fff;">S</h1>
+         </div>
+         <h2>SHAZMA RAHIM</h2>
+         
+         <p><B>TEAM MATE</B> <br>
+          BS-CS<br>
+          STUDENT AT PAF-KIET<br> <br>
+          <b>CONTRIBUTION</b><br>
+          CONTENT<br>
+          ABOUT<br>
+          LOCATION<br>
+          CONFERENCE THEMES<br>
+           
+          </p>
+       </div>
+          
+           
+           
+           
+    
+           
+       
+           
+           
+           
+     
+           
+           
+    </div>
+ 
+    
+ </div>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>EVENTS MANIA</h3>
+            <p>EVENTS MANIA coming to your city, Explore the best events location of your city with best prices</p>
+        
+        </div>
+        <div class="footer-bottom">
+            <p><span>© 2022 EVENTS MANIA - Designed & Developed By <a href="https://www.linkedin.com/in/syed-sohaib-/"  style="color: white">EVENTS MANIA</a></span></p>
+    
+        </div>
+    </footer>
+    
+</body>
+</html>

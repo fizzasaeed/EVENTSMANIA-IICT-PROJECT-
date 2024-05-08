@@ -1,0 +1,433 @@
+<html>
+<head>
+    <style>
+             *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(palace-2.jpg);
+    height: 100px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: solid;
+padding: 5px 20px;
+font-family: 'Times New Roman';
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #ffbd59;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding: 0px 0;
+}
+
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+    width: 100px;
+    float: left;
+    height: auto;}
+
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+}
+footer{
+    background: rgb(116, 134, 155);
+    height: auto;
+    width: 100vw;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.4rem;
+    font-family: 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 4rem;
+}
+.footer-content p{
+    max-width: 350px;
+    margin: 40px;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.footer-bottom{
+    background: #000;
+    /* width: 100vw; */
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+body {
+  font-family: Raleway;
+  background-color: #202125;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: #ffbd59;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+.P{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+}
+a{
+    padding: auto;
+}
+
+nav ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+      }
+
+      nav a {
+        display: block;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #ddc2c2;
+      }
+      /* Hide Dropdowns by Default */
+      nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+      }
+
+      /* Display Dropdowns on Hover */
+      nav ul li:hover > ul {
+        display: grid;
+      }
+
+      /* Fisrt Tier Dropdown */
+      nav ul ul li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+        background-color: #000;
+      }
+    </style>
+
+  <title>GALLERY</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="wrapper">
+          <div class="logo">
+              <img src="images/logo_png-removebg.png" width="150" height="150">
+          </div>
+          <nav>
+              <ul class="nav-area">
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="ABOUT.html">About</a></li>
+                <li><a href="Gallery(2).html">Gallery</a></li>
+                <li>
+                  <a href="eventmain.html">Events</a>
+                  <ul>
+                    <li><a href="EVENTS.MAYYON2.HTML">MEHENDI-MAYYOUN</a></li>
+                    <li><a href="baraat2.html">BARAAT-WEDDING</a></li>
+                      <li><a href="valima.html">VALIMA-RECEPTION</a></li>
+                    <li><a href="BIRTHDAY THEMES.html">BIRTHDAYS</a></li>
+                    <li><a href="CONFERENCE THEMES.html">CONFERENCES</a></li>
+                  </ul>
+                </li>
+    
+                <li><a href="LOCATION.html">Location</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </nav>
+  </div>    
+     </header>
+  <p class="heading">EVENTSMANIA GALLERY</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <a href="https://www.facebook.com/pages/Al-Masaad-Banquet/1988525267827487" style="color: white;"><img src="images/AL MASAAD BANQUET.jpg" alt="AL MASAAD BANQUET" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>AL MASAAD BANQUET  </p></a>
+          <p class="opacity-low">W2VX+QXV, Block L North Nazimabad Town, Karachi, Karachi City, Sindh, Pakistan</p>
+        </div>
+      
+      </div> 
+      
+    </div>
+  
+
+    <div class="img-box">
+      <a href="https://www.facebook.com/BellagioBanquet/" style="color: white;"><img src="images/Bellagio Banquet.jpg" alt="Bellagio Banquet" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Bellagio Banquet</p></a>
+          <p class="opacity-low">Shahrah-e-Pakistan, Federal B Area Block 6 Gulberg Town, Karachi, Karachi City, Sindh, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+        <a href="https://www.facebook.com/beachluxuryhotel" style="color: white;"><img  src="images/Beach Luxury Hotel.jpg" alt="Beach Luxury Hotel" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Beach Luxury Hotel</p></a>
+          <p class="opacity-low"> Moulvi Tamizuddin Khan Rd, Lalazar Karachi, Karachi City, Sindh 74000, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+      <a href="https://www.facebook.com/profile.php?id=100067775601449" style="color: white;"><img src="images/REX BANQUET.jpg" alt="REX BANQUET" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>REX BANQUET</p></a>
+          <p class="opacity-low">Sharah-e-Sher Shah Suri, opposite Saima Pari Mall, Block D North Nazimabad Town, Karachi, Karachi City, Sindh 75300, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+      <a href="https://www.facebook.com/SaffronBanquet" style="color: white;"><img src="images/saffron.jpg" alt="saffron" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Saffron</p></a>
+          <p class="opacity-low">D12 Shahrah-e-Sher Shah Suri, Block I North Nazimabad Town, Karachi, Sindh, Pakistan</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="img-box">
+      <a href="https://www.facebook.com/thecliftonmarquee" style="color: white;"><img src="images/The Clifton Marquee.jpg" alt="The Clifton Marquee" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Clifton Marquee</p></a>
+          <p class="opacity-low">F-69, Block 4 Block 3 Clifton, Karachi, Karachi City, Sindh 75200, Pakistan</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="img-box">
+      <a href="https://www.facebook.com/continentalbanquet" style="color: white;"><img src="images/The Continental Luxury Banquet.jpg" alt="The Continental Luxury Banquet" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Continental Luxury Banquet</p></a>
+          <p class="opacity-low">New Rd Service Ln, Block 1 Gulistan-e-Johar, Karachi, Karachi City, Sindh, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+      <a href="https://www.facebook.com/thepalmbanquet" style="color: white;"><img src="images/The Palm Banquet.jpg" alt="The Palm Banquet" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>The Palm Banquet</p></a>
+          <p class="opacity-low">W3H7+M4G, Block 10 Gulberg Town, Karachi, Karachi City, Sindh, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  
+    <div class="img-box">
+        <a href="https://www.facebook.com/TheSignatureMarquee" style="color: white;"><img src="images/The Signature Marquee.jpg" alt="The Signature Marquee" />
+        <div class="transparent-box">
+          <div class="caption">
+          <p>The Signature Marquee</p></a>
+            <p class="opacity-low">W425+997, Central Government Employees CHS, Karachi, Karachi City, Sindh, Pakistan</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <a href="https://www.facebook.com/theheavensbanquet" style="color: white;"><img src="images/theheavensbanquet.jpg" alt="The Heavens Banquet" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>The Heavens Banquet</p></a>
+            <p class="opacity-low">Plot no. 1 B, Block -A, Latifi CO-OP housing society, Block 20 Gulistan-e-Johar, Karachi, Sindh 00000, Pakistan</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <a href="https://www.facebook.com/Hotelmehran.khi" style="color: white;"><img src="images/Hotel Mehran Karachi.jpg" alt="Hotel Mehran Karachi" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Hotel Mehran Karachi</p></a>
+            <p class="opacity-low">Shahrah-e-Faisal Rd, Karachi Cantonment Karachi, Karachi City, Sindh, Pakistan</p>
+          </div>
+        </div> 
+      </div>
+    <div class="img-box">
+      <a href="https://www.facebook.com/PCHotelKarachi/" style="color: white;"><img src="images/Pearl-Continental Hotel Karachi.jpg" alt="Pearl Continental Hotel Karachi" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Pearl-Continental Hotel Karachi</p></a>
+          <p class="opacity-low">Club Rd, opposite PIDC, Civil Lines, Karachi, Karachi City, Sindh, Pakistan</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+
+
+  <!-- footer ka content -->
+  <footer>
+    <div class="footer-content">
+        <h3>EVENTS MANIA</h3>
+        <p>EVENTS MANIA coming to your city, Explore the best events location of your city with best prices</p>
+     
+    </div>
+    <div class="footer-bottom">
+        <p><span>© 2022 EVENTS MANIA - Designed & Developed By <a href="https://www.linkedin.com/in/syed-sohaib-/" style="color: white">EVENTS MANIA</a></span></p>
+
+    </div>
+</footer>
+
+</body>
+</html>
